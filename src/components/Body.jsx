@@ -19,7 +19,7 @@ function Body() {
 
   useEffect(() => {
     fetchData();
-    console.log("useeffect");
+
   }, []);
 
   const fetchData = async () => {

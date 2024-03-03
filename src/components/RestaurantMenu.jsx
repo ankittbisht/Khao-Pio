@@ -24,7 +24,7 @@ function RestaurantMenu() {
   }
 
   const { name, cuisines, costForTwoMessage } =
-    resInfo?.cards[2]?.card?.card?.info;
+    resInfo?.cards[0]?.card?.card?.info;
 
   const categories =
     resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
