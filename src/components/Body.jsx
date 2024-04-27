@@ -72,7 +72,7 @@ function Body() {
             className="ml-4 px-6 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none"
             onClick={() => {
               const filteredList = listOfRestaurants.filter(
-                (res) => res.info.avgRating > 4
+                (res) => res?.info?.avgRating > 4.3
               );
               setFilteredRestaurant(filteredList);
             }}
@@ -96,7 +96,7 @@ function Body() {
           <Link
             key={restaurant.info.id}
             to={"/restaurants/" + restaurant.info.id}
-            className="w-full"
+            className=""
           >
             <div className="w-full transition duration-300 transform hover:scale-105">
               <Card resData={restaurant} />
