@@ -6,7 +6,7 @@ function Card(props) {
     resData?.info;
 
   return (
-    <div className="min-h-[360px] h-full rounded overflow-hidden shadow-lg bg-white">
+    <div className="min-h-[400px] h-full rounded overflow-hidden shadow-lg bg-white">
       <img
         className="w-full  h-40 object-cover"
         src={CDN_LINK + cloudinaryImageId}
