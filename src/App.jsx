@@ -1,13 +1,10 @@
 import { useEffect, useState } from "react";
-import Body from "./components/Body";
-import Header from "./components/Header";
 import UserContext from "./utils/UserContext";
-import Footer from "./components/Footer";
+import Router from "./Router/Router";
 
 function App() {
   //authentication
   const [userName, setUserName] = useState();
-
   useEffect(() => {
     const data = {
       name: "Ankit Bisht",
@@ -17,9 +14,7 @@ function App() {
 
   return (
     <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
-      <Header />
-      <Body />
-      <Footer />
+      <Router />
     </UserContext.Provider>
   );
 }

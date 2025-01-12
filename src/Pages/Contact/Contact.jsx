@@ -2,11 +2,12 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="bg-gray-100 min-h-screen py-12">
+    <div className="mx-auto max-w-screen-2xl px-4  sm:px-8 py-5 sm:py-10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-800 mb-8">Contact Us</h2>
-        <div className="bg-white shadow-md rounded-lg overflow-hidden">
-          <div className="p-8">
+        <h1 className="font-protest text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-8">
+          Contact Us</h1>
+        <div className="bg-[#FAF3E1] shadow-md rounded-[20px] overflow-hidden">
+          <div className="p-8 font-pop">
             <form>
               <div className="mb-4">
                 <label
@@ -56,7 +57,7 @@ const ContactUs = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="py-2 px-6 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+                  className="py-2 px-6 bg-[#FF6E1F] text-white font-bold rounded-[10px]  focus:outline-none"
                 >
                   Send Message
                 </button>
